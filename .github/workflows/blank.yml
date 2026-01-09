@@ -12,7 +12,7 @@ on:
 jobs:
   ci:
     name: Dummy CI Job
-    runs-on: [self-hosted, medvista-runner]
+    runs-on: medvista-runner-11
 
     steps:
       - name: Checkout code
@@ -39,7 +39,7 @@ jobs:
   cd:
     name: Dummy CD Job
     needs: ci
-    runs-on: [self-hosted, medvista-runner]
+    runs-on: medvista-runner-11
 
     steps:
       - name: Dummy deploy step
